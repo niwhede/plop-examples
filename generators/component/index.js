@@ -12,9 +12,14 @@ module.exports = {
       default: true,
       message: "Do you want tests?",
     },
+    {
+      type: "confirm",
+      name: "wantStories",
+      default: false,
+      message: "Do you want stories?",
+    },
   ],
   actions: (data) => {
-    // Generate index.js and index.test.js
     const actions = [
       {
         type: "add",
@@ -24,13 +29,22 @@ module.exports = {
       },
     ];
 
-    // If the user wants i18n messages
     if (data.wantTests) {
       actions.push({
         type: "add",
         path:
           "../src/components/{{properCase name}}/{{properCase name}}.test.tsx",
         templateFile: "./component/component-test.js.hbs",
+        abortOnFail: true,
+      });
+    }
+
+    if (data.wantStories) {
+      actions.push({
+        type: "add",
+        path:
+          "../src/components/{{properCase name}}/{{properCase name}}.stories.tsx",
+        templateFile: "./component/component-stories.js.hbs",
         abortOnFail: true,
       });
     }
