@@ -2,6 +2,7 @@ const componentGenerator = require("./component");
 const viewGenerator = require("./view");
 const otherGenerator = require("./other");
 const demoGenerator = require("./demo");
+const expressGenerator = require("./express");
 
 const path = require("path");
 const { execSync } = require("child_process");
@@ -11,6 +12,7 @@ module.exports = function (plop) {
   plop.setGenerator("view", viewGenerator);
   plop.setGenerator("other", otherGenerator);
   plop.setGenerator("demo", demoGenerator);
+  plop.setGenerator("express", expressGenerator);
 
   plop.setActionType("prettify", (answers, config) => {
     // Copied from react-boilerplate
