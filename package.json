@@ -10,7 +10,11 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "child_process": "^1.0.2",
+    "node-plop": "^0.26.2",
+    "path": "^0.12.7",
     "plop": "^2.7.4",
+    "prettier": "^2.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
@@ -24,7 +28,8 @@
     "eject": "react-scripts eject",
     "generate": "plop --plopfile generators/index.js",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "prettify": "prettier --write"
   },
   "eslintConfig": {
     "extends": "react-app"
