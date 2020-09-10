@@ -11,8 +11,8 @@ module.exports = function (plop) {
   plop.setGenerator("component", componentGenerator);
   plop.setGenerator("view", viewGenerator);
   plop.setGenerator("other", otherGenerator);
-  plop.setGenerator("demo", demoGenerator);
   plop.setGenerator("express", expressGenerator);
+  plop.setGenerator("demo", demoGenerator);
 
   plop.setActionType("prettify", (answers, config) => {
     // Copied from react-boilerplate
