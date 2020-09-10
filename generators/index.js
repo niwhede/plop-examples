@@ -1,10 +1,12 @@
 const componentGenerator = require("./component");
+const viewGenerator = require("./view");
 const path = require("path");
 const { execSync } = require("child_process");
 
 module.exports = function (plop) {
-  // create your generators here
   plop.setGenerator("component", componentGenerator);
+  plop.setGenerator("view", viewGenerator);
+
   plop.setActionType("prettify", (answers, config) => {
     // Copied from react-boilerplate
     const folderPath = `${path.join(
