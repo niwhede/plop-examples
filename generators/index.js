@@ -1,10 +1,12 @@
 const componentGenerator = require("./component");
 const viewGenerator = require("./view");
+const otherGenerator = require("./other");
 const path = require("path");
 const { execSync } = require("child_process");
 
 module.exports = function (plop) {
   plop.setGenerator("component", componentGenerator);
+  plop.setGenerator("other", otherGenerator);
   plop.setGenerator("view", viewGenerator);
 
   plop.setActionType("prettify", (answers, config) => {

@@ -3,11 +3,14 @@
  * {{ properCase name }}
  *
  */
-
 import React from 'react';
 import styled from 'styled-components';
 
-function {{ properCase name }}() {
+type Props = {
+
+}
+
+function {{ properCase name }}(props: Props) {
   return (
     <div>
 
@@ -15,4 +18,12 @@ function {{ properCase name }}() {
   );
 }
 
+{{#if memo}}
+const isEqual = (prevProps: Props, nextProps: Props) => {
+  return false;
+}
+
+export default React.memo({{ properCase name }}, isEqual);
+{{else}}
 export default {{ properCase name }};
+{{/if}}

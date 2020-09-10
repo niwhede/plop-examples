@@ -1,0 +1,36 @@
+/**
+ *
+ * {{ properCase name }}
+ *
+ */
+
+import React from 'react';
+import styled from 'styled-components';
+
+{{#if styledSystem}}
+import {
+  {{#each styledSystem}}
+    {{this}},
+  {{/each}}
+} from 'styled-system';
+{{/if}}
+
+type Props = &
+{{#if styledSystem}}
+  {{#each styledSystem}}
+    {{this}} &
+  {{/each}}
+{{/if}} {
+
+
+}
+
+function {{ properCase name }}({}: Props) {
+  return (
+    <div>
+
+    </div>
+  );
+}
+
+export default {{ properCase name }};

@@ -1,5 +1,5 @@
 module.exports = {
-  description: "Functional React component",
+  description: "Application view",
   prompts: [
     {
       type: "input",
@@ -24,6 +24,12 @@ module.exports = {
       name: "wantStories",
       default: false,
       message: "Do you want stories?",
+    },
+    {
+      type: "confirm",
+      name: "memo",
+      default: false,
+      message: "Do you want to wrap the component in React.memo",
     },
   ],
   actions: (data) => {
