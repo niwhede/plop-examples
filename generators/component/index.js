@@ -5,6 +5,13 @@ module.exports = {
       type: "input",
       name: "name",
       message: "What should it be called?",
+      validate: (value) => {
+        if (/.+/.test(value)) {
+          return true;
+        }
+
+        return "The name is required";
+      },
     },
     {
       type: "confirm",
