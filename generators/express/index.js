@@ -1,5 +1,5 @@
 module.exports = {
-  description: "Functional React component",
+  description: "Express routes",
   prompts: [
     {
       type: "input",

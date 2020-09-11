@@ -1,5 +1,10 @@
+
+/**
+ * Examples of all inquirer prompts
+ */
+
 module.exports = {
-  description: "Application view",
+  description: "Inquirer demo",
   prompts: [
     {
       type: "input",

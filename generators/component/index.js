@@ -1,5 +1,5 @@
 module.exports = {
-  description: "Application view",
+  description: "Functional React component",
   prompts: [
     {
       type: "input",
