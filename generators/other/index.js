@@ -19,6 +19,38 @@ module.exports = {
           name: "Layout",
           value: "LayoutProps"
         },
+        {
+          name: "Color",
+          value: "ColorProps"
+        },
+        {
+          name: "Typography",
+          value: "TypographyProps"
+        },
+        {
+          name: "Flexbox",
+          value: "FlexboxProps"
+        },
+        {
+          name: "GridLayout",
+          value: "GridLayoutProps"
+        },
+        {
+          name: "Background",
+          value: "BackgroundProps"
+        },
+        {
+          name: "Border",
+          value: "BorderProps"
+        },
+        {
+          name: "Position",
+          value: "PositionProps"
+        },
+        {
+          name: "Shadow",
+          value: "ShadowProps"
+        },
       ]
     },
   ],
